@@ -40,6 +40,18 @@ export class SignupComponent implements OnInit {
   }
   console.log(data)
   alert("Successfully added")
+  this.name=""
+  this.phone=""
+  this.gender=""
+  this.email=""
+  this.address=""
+  this.pincode=""
+  this.bloodgroup=""
+  this.dob=""
+  this.age=""
+  this.parentName=""
+  this.pass=""
+  this.confirmPass=""
 }
   
 
