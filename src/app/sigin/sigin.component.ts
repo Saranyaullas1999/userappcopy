@@ -20,6 +20,8 @@ export class SiginComponent implements OnInit {
     }
     console.log(data)
     alert("Successfully Added")
+    this.username=""
+    this.password=""
   }
 
   ngOnInit(): void {
