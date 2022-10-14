@@ -12,6 +12,7 @@ export class SiginComponent implements OnInit {
   username=""
   password=""
 
+  status:boolean=false
 
   readValues=()=>{
     let data={
@@ -22,6 +23,7 @@ export class SiginComponent implements OnInit {
     alert("Successfully Added")
     this.username=""
     this.password=""
+    this.status=true
   }
 
   ngOnInit(): void {
