@@ -1,11 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule,Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SiginComponent } from './sigin/sigin.component';
 import { SignupComponent } from './signup/signup.component';
 
+
+const appRoutes:Routes=[
+  {
+    path:"",component:SiginComponent
+  },
+  {
+    path:"signup",component:SignupComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +24,8 @@ import { SignupComponent } from './signup/signup.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
