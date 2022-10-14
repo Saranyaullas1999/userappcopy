@@ -23,6 +23,8 @@ export class SignupComponent implements OnInit {
   pass=""
   confirmPass=""
 
+  status:boolean=false
+
   readValue=()=>{
     let data={
     "name":this.name,
@@ -52,6 +54,7 @@ export class SignupComponent implements OnInit {
   this.parentName=""
   this.pass=""
   this.confirmPass=""
+  this.status=true
 }
   
 
